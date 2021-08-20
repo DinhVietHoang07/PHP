@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `book_library`
+-- Cấu trúc bảng cho bảng `library`
 --
 
 CREATE TABLE `library` (
@@ -37,7 +37,7 @@ CREATE TABLE `library` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `book_library`
+-- Đang đổ dữ liệu cho bảng `library`
 --
 
 INSERT INTO `library` (`bookid`, `authorid`, `title`, `ISBN`, `pud_year`, `available`) VALUES
@@ -49,7 +49,7 @@ INSERT INTO `library` (`bookid`, `authorid`, `title`, `ISBN`, `pud_year`, `avail
 --
 
 --
--- Chỉ mục cho bảng `book_library`
+-- Chỉ mục cho bảng `library`
 --
 ALTER TABLE `library`
     ADD PRIMARY KEY (`bookid`);
@@ -59,7 +59,7 @@ ALTER TABLE `library`
 --
 
 --
--- AUTO_INCREMENT cho bảng `book_library`
+-- AUTO_INCREMENT cho bảng `library`
 --
 ALTER TABLE `library`
     MODIFY `bookid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
